@@ -28,7 +28,7 @@ export default function Qr() {
 
               <input
               className='
-              pl-5 py-2 bg-bgrounded-full
+              pl-5 py-2 bg-bgrounded-full bg-white
               mb-10 shadow-xl focus:outline-0
               w-120 border-2 rounded-full'
               type="text"
@@ -44,7 +44,7 @@ export default function Qr() {
               >Generate</button>
 
             </div>
-            <img src={`https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${value}`} className=""></img>
+            <img alt="qr code" src={`https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${value}`} className=""></img>
               <a href={`https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${value}`} download> 
                 <button className="
                 mt-10 p-2 border-2 border-black

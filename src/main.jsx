@@ -4,6 +4,7 @@ import { createHashRouter, RouterProvider } from 'react-router'
 import './index.css'
 import App from './App.jsx'
 import Qr from './components/Qr.jsx'
+import ColorPicker from './components/ColorPicker.jsx'
 
 const router = createHashRouter([
   {
@@ -13,6 +14,10 @@ const router = createHashRouter([
   {
     path: "/qr",
     element: <Qr/>
+  },
+  {
+    path: "/colorPicker",
+    element: <ColorPicker/>
   }
 
 ]);
