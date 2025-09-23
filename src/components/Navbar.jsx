@@ -19,11 +19,15 @@ export default function Navbar() {
                 </div>
             </Link>
 
-            <div className="flex p-2 my-2 
-            hover:bg-black hover:text-white
-            transition duration-300 ease-in-out">
-                <button>JSON validator</button>
-            </div>
+            <Link
+            to="/passwordGenerator"
+            className={location.pathname === "/passwordGenerator" ? "bg-black text-white" : "bg-bg-two"}>
+                <div className="flex p-2 my-2 
+                hover:bg-black hover:text-white
+                transition duration-300 ease-in-out">
+                    <button>Password generator</button>
+                </div>
+            </Link>
 
             <div className="flex p-2 my-2 
             hover:bg-black hover:text-white
