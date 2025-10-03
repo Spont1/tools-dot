@@ -29,19 +29,13 @@ export default function Navbar() {
                 </div>
             </Link>
 
-            <div className="flex p-2 my-2 
-            hover:bg-black hover:text-white
-            transition duration-300 ease-in-out">
-                <button>Unit converter</button>
-            </div>
-
             <Link
             to="/colorPicker"
             className={location.pathname === "/colorPicker" ? "bg-black text-white" : "bg-bg-two"}>
             <div className="flex p-2 my-2 
             hover:bg-black hover:text-white
             transition duration-300 ease-in-out">
-                <button>Tailwind color picker</button>
+                <button>Color picker</button>
             </div>
             </Link>
         </div>
