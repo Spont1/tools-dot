@@ -1,23 +1,11 @@
-import { Link, useLocation } from "react-router"
-import { GiHamburgerMenu } from "react-icons/gi";
+import { Link } from "react-router"
 
-export default function Navbar() {
 
-    const location = useLocation();
-    const handleClick = () => {
-        
-    }
-
+export default function MobileNavBar() {
     return(
-        <nav className="flex flex-col w-3xs ml-10 mt-30 text-2xl font-semibold ">
-
-
-            <Link to="/nav">
-            <GiHamburgerMenu 
-            className="scale-200 md:hidden"/>
-            </Link>
-
-            <div className="hidden md:flex flex flex-col">
+        <nav className="w-full h-full flex items-center justify-center">
+            <nav className="scale-110 flex w-3xs pt-10 text-2xl font-semibold items-center justify-center">
+                <div className="flex flex-col">
                 <input type='text'max-length='20' placeholder="Search"
                 className='pl-5 py-2 bg-bg rounded-full mb-10 shadow-md focus:outline-0' />
                 
@@ -51,7 +39,7 @@ export default function Navbar() {
                 </div>
                 </Link>
             </div>
-
+            </nav>
         </nav>
     )
 }
