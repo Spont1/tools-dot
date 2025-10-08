@@ -12,11 +12,12 @@ function App() {
       <div className='grid grid-cols-4 h-9/10'>
           <Navbar />
         <div className='
-        col-span-3 h-3/4 w-4/5 flex bg-bg shadow-xl
+        col-span-3 h-3/4 w-4/5 flex bg-bg
         mt-30 mr-auto justify-center content-center
-        '>
+        sm:shadow-xl'>
           <div className='flex flex-col gap-6 justify-center items-center'>
-            <p className='text-center text-gray-300 font-bold text-8xl'>Your tool will appear here</p>
+            <p className='text-center text-gray-300 font-bold text-4xl absolute top-40 md:hidden'> Please select a tool using the hamburger button</p>
+            <p className='text-center text-gray-300 font-bold hidden sm:text-8xl'>Your tool will appear here</p>
           </div>
         </div>
       </div>

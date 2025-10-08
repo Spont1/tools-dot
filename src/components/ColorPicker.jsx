@@ -21,10 +21,10 @@ export default function ColorPicker() {
       <div className='grid grid-cols-4 h-9/10'>
           <Navbar />
         <div className='
-        col-span-3 h-3/4 w-4/5 flex bg-bg shadow-xl
+        col-span-3 h-3/4 w-4/5 flex bg-two sm:bg-bg
         mt-30 mr-auto justify-center content-center
-        '>
-          <div className='flex flex-col gap-6 justify-center items-center'>
+        sm:shadow-xl'>
+          <div className='flex flex-col gap-6 justify-center items-center sm:scale-100 scale-75'>
             <p className="font-semibold text-4xl text-center mb-20">Pick a color or enter a hex value</p>
             <BlockPicker 
             className="scale-130 mb-20"

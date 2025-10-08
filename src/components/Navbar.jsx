@@ -14,7 +14,7 @@ export default function Navbar() {
 
             <Link to="/nav">
             <GiHamburgerMenu 
-            className="scale-200 md:hidden"/>
+            className="absolute top-35 left-14 scale-200 md:hidden"/>
             </Link>
 
             <div className="hidden md:flex flex flex-col">
