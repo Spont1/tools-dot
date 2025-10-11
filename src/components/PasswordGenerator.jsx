@@ -75,7 +75,7 @@ export default function PasswordGenerator() {
     const maxPasswordLength = "36"
 
     return(
-    <div className='h-screen w-screen'>
+    <div className='h-screen w-screen absolute sm:right-0 right-6'>
       <Topper />
       <div className='grid grid-cols-4 h-9/10'>
           <Navbar />
@@ -131,11 +131,11 @@ export default function PasswordGenerator() {
                             max={maxPasswordLength}
                             value={passwordLength}
                             onChange={(event) => setPasswordLength(event.target.value)}
-                            className=" accent-black m-0 p-0"/>
+                            className=" accent-black m-0 p-0 scale-100"/>
                         </div>
                     </div>
 
-                    <div className="flex flex-col ml-3 pr-3 pt-5 relative">
+                    <div className="flex flex-col pr-3 pt-5 relative sm:ml-3 ml-13 sm:scale-100 scale-130">
                         <div>
 
                             <input 
@@ -166,9 +166,10 @@ export default function PasswordGenerator() {
                             >Contain special characters</label>
                             <div className="relative group">
                                 <FaCircleQuestion 
-                                className="scale-120 absolute bottom-1 left-60"/>
+                                className="scale-120 absolute bottom-1 left-60 md:flex hidden "/>
                         <div className="
-                        absolute bottom-8 left-54 transform duration-200 opacity-0 group-hover:opacity-100
+                        absolute bottom-8 left-54 transform duration-200
+                        opacity-0 group-hover:opacity-100
                         ">
                             <p className="
                             text-white bg-black p-1.5 flex flex-inline

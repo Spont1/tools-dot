@@ -13,7 +13,7 @@ export default function Qr() {
   }
 
   return(
-    <div className="h-screen w-screen">
+    <div className="h-screen w-screen absolute sm:right-0 right-5">
       <Topper />
       <div className='grid grid-cols-4 h-9/10'>
           <Navbar />
@@ -40,7 +40,7 @@ export default function Qr() {
               className="
               mx-6 p-2 border-2 border-black
               bg-black rounded-full text-white
-              font-semibold"
+              font-semibold sm:scale-100 scale-150"
               >Generate</button>
 
             </div>
@@ -49,7 +49,7 @@ export default function Qr() {
                 <button className="
                 mt-10 p-2 border-2 border-black
                 bg-black rounded-full text-white
-                font-semibold scale-120"
+                font-semibold sm:scale-120 scale-150"
                 >Download PNG</button>
               </a>
           </div>
