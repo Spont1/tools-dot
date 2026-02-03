@@ -6,7 +6,7 @@ export default function Footer() {
     <div className="scale-300 absolute left-1/2 bottom-10 hidden md:flex">
         <div className="flex">
             <div className="flex hover:scale-105 transition duration-200">
-                <a href="https://github.com/Spont1" target="_blank">
+                <a href="https://github.com/Wiispi" target="_blank">
                 <FaGithub />
                 </a>
             </div>

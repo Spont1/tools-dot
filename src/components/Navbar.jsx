@@ -26,9 +26,11 @@ export default function Navbar() {
             className="absolute top-35 left-14 scale-200 md:hidden"/>
             </Link>
 
-            <div className="hidden md:flex flex flex-col">
+            <div className="hidden md:flex flex-col">
+                {/*
                 <input type='text'max-length='20' placeholder="Search"
                 className='pl-5 py-2 bg-bg rounded-full mb-10 shadow-md focus:outline-0' />
+                */}
                 <ul>
                     {toolsList}
                 </ul>

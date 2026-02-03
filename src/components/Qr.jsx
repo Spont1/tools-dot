@@ -18,9 +18,9 @@ export default function Qr() {
       <div className='grid grid-cols-4 h-9/10'>
           <Navbar />
         <div className='
-        col-span-3 h-3/4 w-4/5 flex bg-two sm:bg-bg
+        col-span-3 h-3/4 w-4/5 bg-two sm:bg-bg
         mt-30 mr-auto justify-center content-center
-        sm:shadow-xl'>
+        sm:shadow-xl '>
           
           <div className='flex flex-col gap-6 justify-center items-center sm:scale-100 scale-75'>
             <p className='font-semibold text-4xl text-center mb-20'>Paste the text or link you want to generate as a QR code</p>
@@ -40,17 +40,19 @@ export default function Qr() {
               className="
               mx-6 p-2 border-2 border-black
               bg-black rounded-full text-white
-              font-semibold sm:scale-100 scale-150"
+              font-semibold sm:scale-100 scale-150
+              cursor-pointer"
               >Generate</button>
 
             </div>
             <img alt="qr code" src={`https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${value}`} className=""></img>
-              <a href={`https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${value}`} download> 
+              <a href={`https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${value}`} target="blank_"> 
                 <button className="
                 mt-10 p-2 border-2 border-black
                 bg-black rounded-full text-white
-                font-semibold sm:scale-120 scale-150"
-                >Download PNG</button>
+                font-semibold sm:scale-120 scale-150
+                cursor-pointer"
+                >Download PNG here </button>
               </a>
           </div>
         </div>

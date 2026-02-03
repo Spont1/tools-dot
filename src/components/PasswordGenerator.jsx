@@ -97,7 +97,7 @@ export default function PasswordGenerator() {
                     <div className="relative group">
                         <FaRegCopy className="
                         scale-195 mx-5 opacity-50 hover:opacity-100
-                        transition duration-300"
+                        transition duration-300 active:scale-220 cursor-pointer"
                         onClick={handleCopy}/>
 
                     </div>
@@ -105,7 +105,9 @@ export default function PasswordGenerator() {
                     <button className="
                     p-2 border-2 border-black
                     bg-black rounded-full text-white
-                    font-semibold scale-120"
+                    font-semibold scale-120
+                    cursor-pointer"
+                    
                     onClick={handleClick}
                     >Generate
                     </button>
@@ -147,7 +149,7 @@ export default function PasswordGenerator() {
 
                             <label
                             for="numbers"
-                            className="p-2 font-semibold text-lg"
+                            className="p-2 font-semibold text-lg cursor-pointer"
                             >Contain numbers</label>
 
                         </div>
@@ -162,11 +164,11 @@ export default function PasswordGenerator() {
 
                             <label
                             for="specialCharacters"
-                            className="p-2 font-semibold text-lg"
+                            className="p-2 font-semibold text-lg cursor-pointer"
                             >Contain special characters</label>
                             <div className="relative group">
                                 <FaCircleQuestion 
-                                className="scale-120 absolute bottom-1 left-60 md:flex hidden "/>
+                                className="scale-120 absolute bottom-1 left-65 md:flex hidden "/>
                         <div className="
                         absolute bottom-8 left-54 transform duration-200
                         opacity-0 group-hover:opacity-100

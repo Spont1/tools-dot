@@ -6,7 +6,7 @@ import App from './App.jsx'
 import Qr from './components/Qr.jsx'
 import ColorPicker from './components/ColorPicker.jsx'
 import PasswordGenerator from './components/PasswordGenerator.jsx'
-import MobileNavBar from './components/MobileNavbar.jsx'
+import MobileNavBar from './components/MobileNavBar.jsx'
 
 const router = createHashRouter([
   {
